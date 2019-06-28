@@ -18,8 +18,5 @@
 		<!-- Specifying Session Context -->
 		<property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 
-		<mapping class="org.cubic.entities.CustomerEntity"></mapping>
-		<mapping class="org.cubic.entities.CustomerLoginEntity"></mapping>
-		<mapping class="org.cubic.entities.AccountEntity"></mapping>
 	</session-factory>
 </hibernate-configuration>
