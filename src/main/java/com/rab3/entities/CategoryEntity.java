@@ -44,5 +44,10 @@ public class CategoryEntity {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	@Override
+	public String toString() {
+		return "CategoryEntity [id=" + id + ", name=" + name + ", description=" + description + "]";
+	}
 	
 }
