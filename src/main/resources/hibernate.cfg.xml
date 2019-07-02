@@ -19,5 +19,6 @@
 		<property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 
 		<mapping class="com.rab3.entities.CategoryEntity"></mapping>
+		<mapping class="com.rab3.entities.ProductEntity"></mapping>
 	</session-factory>
 </hibernate-configuration>
