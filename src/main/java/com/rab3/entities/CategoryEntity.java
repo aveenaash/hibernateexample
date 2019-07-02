@@ -1,10 +1,15 @@
 package com.rab3.entities;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +25,9 @@ public class CategoryEntity {
 	
 	@Column(name = "description")
 	private String description;
+	
+	@OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<ProductEntity> products;
 
 	public Long getId() {
 		return id;
@@ -43,6 +51,15 @@ public class CategoryEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	
+	public List<ProductEntity> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<ProductEntity> products) {
+		this.products = products;
 	}
 
 	@Override

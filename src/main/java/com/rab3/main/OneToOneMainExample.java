@@ -13,30 +13,30 @@ public class OneToOneMainExample {
 		
 		ProductRepository productRepository = new ProductRepository();
 		
-//		ProductEntity p = new ProductEntity();
-//		p.setName("Tomato");
-//		p.setDescription("very very fresh organic tomatoes");
-//		p.setPrice(12.00d);
+		ProductEntity p = new ProductEntity();
+		p.setName("Onions");
+		p.setDescription("very very fresh organic onions");
+		p.setPrice(12.00d);
 //		
 		
-		CategoryEntity electronicsCategory = categoryRepository.getCategoryByName("Electronics");
+//		CategoryEntity electronicsCategory = categoryRepository.getCategoryByName("Electronics");
 //		p.setCategory(electronicsCategory);
 		
-//		CategoryEntity groceriesCategory = categoryRepository.getCategoryByName("Groceries");
-//		p.setCategory(groceriesCategory);
+		CategoryEntity groceriesCategory = categoryRepository.getCategoryByName("Groceries");
+		p.setCategory(groceriesCategory);
 //		
-//		productRepository.save(p);
+		productRepository.save(p);
 		
 		System.out.println("selecting tomato");
 		
-		ProductEntity tomato = productRepository.getProductByName("Tomato");
-		System.out.println(tomato.toString());
-		
-		System.out.println("updating product to electronics");
-		electronicsCategory.setDescription("This is test description");
-		
-		tomato.setCategory(electronicsCategory);
-		productRepository.update(tomato);
+//		ProductEntity tomato = productRepository.getProductByName("Tomato");
+//		System.out.println(tomato.toString());
+//		
+//		System.out.println("updating product to electronics");
+//		electronicsCategory.setDescription("This is test description");
+//		
+//		tomato.setCategory(electronicsCategory);
+//		productRepository.update(tomato);
 		
 		
 		
