@@ -20,5 +20,6 @@
 
 		<mapping class="com.rab3.entities.CategoryEntity"></mapping>
 		<mapping class="com.rab3.entities.ProductEntity"></mapping>
+		<mapping class="com.rab3.entities.OrderEntity"></mapping>
 	</session-factory>
 </hibernate-configuration>
